@@ -6,7 +6,7 @@ Hello World !
 You will have opportunity to play with the segment builder and manipulate different concepts.
 Each segment has a focus on a dedicated segment builder capability - All capabilities can be combined in more complex segments if needed.
 
-**Segment 1:**
+**Segment 1:** OK
 This person-level audience is all about profile attributes
 
 In the home page, under Customer, click on audiences, then create audience, build rule
@@ -18,7 +18,7 @@ Refresh estimate and view profiles
 Choose the evaluation method you need
 Save the segment
 
-**Segment 2:**
+**Segment 2:** OK
 This person-level audience is all about events
 
 In the home page, under Customer, click on audiences, then create audience, build rule
@@ -40,7 +40,7 @@ In the home page, under Customer, click on audiences, then create audience, buil
 Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO, CFO, CTO
 Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/????
 
-**Segment 4:**
+**Segment 4:** KOOOOO
 Account-level audience
 
 In the home page, under Accounts, click on audiences, then create audience
