@@ -3,10 +3,10 @@
 
 Hello World !
 
-
 Segment 1:
-This audience is all about profile attributes
+This person-level audience is all about profile attributes
 
+In the home page, under Customer, click on audiences, then create audience, build rule
 Name your segment with "TRIGRAM-label"
 Navigate to XDM Individual Profile / Work email / Address, drag and drop this attribute, select "Address exists"
 Navigate to XDM Individual Profile / Work phone / Number, drag and drop this attribute to form a group (IMAGE), select "Number exists"
@@ -16,8 +16,9 @@ Choose the evaluation method you need
 Save the segment
 
 Segment 2:
-This audience is all about events
+This person-level audience is all about events
 
+In the home page, under Customer, click on audiences, then create audience, build rule
 Name your segment with "TRIGRAM-label"
 Go to the events tab, search for "page" in the search bar, drag and drop the "page views" event type
 Click on "page views" in the "browse variables" section to add context to the "page views" event, select "today" instead of "any time"
@@ -28,3 +29,11 @@ Go to the events tab, search for "form", drag and drop the "form filled out" eve
 Clean the search bar
 Click on "form filled out" in the "browse variables" section if you wish to add context in the "form filled out" event
 Save the segment
+
+Segment 3:
+This person-level audience is about combining profiles and account attributes
+
+In the home page, under Customer, click on audiences, then create audience, build rule
+Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO, CFO, CTO
+Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/
+
