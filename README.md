@@ -33,12 +33,12 @@ Clean the search bar
 Click on "form filled out" in the "browse variables" section if you wish to add context in the "form filled out" event
 Save the segment
 
-**Segment 3:** KOOOOO
+**Segment 3:**
 This person-level audience is about combining profiles and account attributes
 
 In the home page, under Customer, click on audiences, then create audience, build rule
 Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO, CFO, CTO
-Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/????
+Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/Account/Account Organization/, drag and drop "Number of employees", select greater than 500
 
 **Segment 4:** KOOOOO
 Account-level audience
