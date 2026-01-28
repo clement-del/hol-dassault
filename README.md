@@ -7,7 +7,7 @@ All capabilities can be combined in more complex segments if needed.
 <br><br>
 
 **Audience 1**<br>
-This person-level audience is about profile attributes
+Attributes, events, and existing audiences can be combined in segment definition. This first person-level audience is about profile attributes only. 
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
   
@@ -43,26 +43,65 @@ This person-level audience is about profile attributes
 - For your segment to be evaluated by the audience job and available for activation, you may publish it.
 
 **Audience 2**<br>
-This person-level audience is about events
+Attributes, events, and existing audiences can be combined in segment definition. This second person-level audience is about events.
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
 - Go to the events tab, search for "page" in the search bar, drag and drop the "page views" event type
-- Click on "page views" in the "browse variables" section to add context to the "page views" event, select "today" instead of "any time"
-- Go to Web/Web page details and drag and drop the "page name" attribute in the "event rules" section, select name="product_X"
-- Check all the evaluation methods available for this segment
-- Go to the events tab, search for "form", drag and drop the "form filled out" event type on the right to the "page views" event type to define a sequential segmentation (IMAGE)
+
+<img width="1721" height="905" alt="Screenshot 2026-01-28 at 14 55 05" src="https://github.com/user-attachments/assets/2270789a-4206-47ae-8880-c6ad35fe00c1" />
+
+- Select "today" instead of "any time" for the event you chose
+
+<img width="1715" height="893" alt="Screenshot 2026-01-28 at 14 57 07" src="https://github.com/user-attachments/assets/53e2568c-d358-4900-b539-9f9c1856d50a" />
+
+- Clear the search bar
+- To add additional context to the "page views" event, click on "page views" in the "browse variables" section
+- Go to Web/Web page details and drag and drop the "name" attribute in the "event rules" section
+
+<img width="1728" height="1117" alt="Screenshot 2026-01-28 at 14 58 04" src="https://github.com/user-attachments/assets/edde57fc-a6ab-430b-b42d-7bb31083c18e" />
+
+- Select name="Product_X"
+- Check all the evaluation methods available for this segment. Combining as many profile attributes and one event in a 24 hours timeframe allows all evaluation methods.
+
+<img width="1720" height="909" alt="Screenshot 2026-01-28 at 14 59 20" src="https://github.com/user-attachments/assets/f0efd712-5eaa-46b6-8021-5903c08e3c05" />
+
+- Go to the events tab, search for "form fill", drag and drop the "form filled out" event type on the right to the "page views" event type to define a sequential segmentation
+
+<img width="1723" height="897" alt="Screenshot 2026-01-28 at 15 00 52" src="https://github.com/user-attachments/assets/4b0fb1ca-89e9-4c33-b6c9-8df29de10e15" />
+
 - Clean the search bar
 - Click on "form filled out" in the "browse variables" section if you wish to add context in the "form filled out" event
 - Save the segment
+- Check evaluation methods available. The edge segmentation method is not available anymore. As it must segment in less than 250ms for web personalization use cases, the edge evaluation method is not available when several events are added as segmentation criteria.
 
-When adding events or additional dimensions, it might depend on the number of events, timeframe used for events, additional dimensions, etc. Combining a batch segment in a streaming segment is a way to ensure real-time evaluation of the most important criteria.
+<img width="1722" height="901" alt="Screenshot 2026-01-28 at 15 03 15" src="https://github.com/user-attachments/assets/a311ba11-737f-4278-8c6e-0dc92c96651f" />
+
+Combining a batch segment in a streaming/edge segment is a way to ensure on-time evaluation for the most important criteria of your use cases.
 
 **Audience 3**<br>
-This person-level audience is about combining profiles and account attributes
+This person-level audience is about combining profiles and account attributes.
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
-- Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO, CFO, CTO
-- Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/Account/Account Organization/, drag and drop "Number of employees", select greater than 500
+- Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO
+- Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/Account/Account Organization/, drag and drop "Number of employees", select greater than 20000
+
+<img width="1720" height="904" alt="Screenshot 2026-01-28 at 15 06 14" src="https://github.com/user-attachments/assets/59d57fbb-aebd-406b-87f7-a0f3662cea97" />
+
+- Refresh estimate and view profiles to check the results are fine
+- Check the evaluation method. Only batch evaluation method is available. This is a normal behaviour, when adding account attributes in a person-level audience, it only allows batch evaluation.
+
+<img width="1722" height="902" alt="Screenshot 2026-01-28 at 15 10 16" src="https://github.com/user-attachments/assets/745d785e-2130-48fe-8a9b-ffc521c717c1" />
+
+- To bypass this work by design behaviour that guarantees segment evaluation performance, we will do the same segment differently. Take off the "number of employees" attribute in the segment definition.
+- Go to audience tab in the segment definition screen, click on "Experience Platform" to see the list of published audiences. (Audiences might be available from other sources in customers implementation).
+- Drag and drop the "Bodea - Companies above 20k employees" person-level batch audience.
+- Refresh estimate - Visualize the same volume as before.
+
+<img width="1719" height="906" alt="Screenshot 2026-01-28 at 15 15 29" src="https://github.com/user-attachments/assets/91a08263-7199-4c18-8315-04827fb7a764" />
+
+- Check the evaluation method available, and select streaming segmentation. This time, with a different segmentation logic combining a batch segment within a streaming segment, this segment will be evaluated in seconds as soon as new data arrives within Adobe Experience Platform.
+  
+<img width="1718" height="903" alt="Screenshot 2026-01-28 at 15 16 12" src="https://github.com/user-attachments/assets/1e350c7a-f51b-4e4c-83d5-ecc07f96d4ba" />
 
 **Audience 4**<br>
 Account-level audience
