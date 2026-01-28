@@ -10,11 +10,31 @@ All capabilities can be combined in more complex segments if needed.
 This person-level audience is about profile attributes
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
+  
+<img width="1720" height="895" alt="Screenshot 2026-01-28 at 14 37 05" src="https://github.com/user-attachments/assets/0383f736-db86-49c1-a1ef-d5a3eb5c8106" />
+ 
 - Name your segment with "TRIGRAM-label"
 - Navigate to XDM Individual Profile / Work email / Address, drag and drop this attribute, select "Address exists"
-- Navigate to XDM Individual Profile / Work phone / Number, drag and drop this attribute to form a group (IMAGE), select "Number exists"
-- Type "Job title" in the attribute search bar, click on the information icon (IMAGE) to see the top items repartition (IMAGE), drag and drop the attribute, and select CEO, CFO, CTO
-- Refresh estimate and view profiles
+- Navigate to XDM Individual Profile / Work phone / Number, drag and drop this attribute to form a group, and select "Number exists"
+  
+<img width="1728" height="1117" alt="Screenshot 2026-01-28 at 14 39 22" src="https://github.com/user-attachments/assets/82b8ee02-5073-4204-a839-348d52da0729" />
+
+- Click on Refresh estimate, and "view profiles". The attributes used in the segmentation are the last columns displayed
+  
+<img width="1724" height="906" alt="Screenshot 2026-01-28 at 14 40 30" src="https://github.com/user-attachments/assets/0bec9916-d774-4e32-a216-101ff2befae3" />
+
+- Click on "Hide profiles"
+- Type "Job title" in the attribute search bar, click on the information icon (IMAGE) to see the top items repartition
+
+<img width="1722" height="909" alt="Screenshot 2026-01-28 at 14 41 36" src="https://github.com/user-attachments/assets/830a18f2-0e61-4503-8007-f9ec60a80989" />
+
+- Drag and drop the job title attribute, and select CEO, CFO, CTO thanks to the drop down list
+- Refresh estimate
+- Use an "OR" operator in the first container, and refresh estimate
+
+<img width="1725" height="906" alt="Screenshot 2026-01-28 at 14 43 48" src="https://github.com/user-attachments/assets/b09e1f9e-2b69-4895-9547-1173c1e0b306" />
+
+- Click on "view profiles", and visualize the new columns on the right
 - Choose the evaluation method you need
 - Save the segment
 
@@ -22,7 +42,7 @@ This person-level audience is about profile attributes
 This person-level audience is about events
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
-- Name your segment with "TRIGRAM-label"
+- Please respect this segment label policy for this session "YOUR_TRIGRAM + label"
 - Go to the events tab, search for "page" in the search bar, drag and drop the "page views" event type
 - Click on "page views" in the "browse variables" section to add context to the "page views" event, select "today" instead of "any time"
 - Go to Web/Web page details and drag and drop the "page name" attribute in the "event rules" section, select name="product_X"
