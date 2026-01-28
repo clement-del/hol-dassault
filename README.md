@@ -13,7 +13,7 @@ This person-level audience is about profile attributes
   
 <img width="1720" height="895" alt="Screenshot 2026-01-28 at 14 37 05" src="https://github.com/user-attachments/assets/0383f736-db86-49c1-a1ef-d5a3eb5c8106" />
  
-- Name your segment with "TRIGRAM-label"
+- Please respect this segment label policy for this session "YOUR_TRIGRAM + label"
 - Navigate to XDM Individual Profile / Work email / Address, drag and drop this attribute, select "Address exists"
 - Navigate to XDM Individual Profile / Work phone / Number, drag and drop this attribute to form a group, and select "Number exists"
   
@@ -35,14 +35,17 @@ This person-level audience is about profile attributes
 <img width="1725" height="906" alt="Screenshot 2026-01-28 at 14 43 48" src="https://github.com/user-attachments/assets/b09e1f9e-2b69-4895-9547-1173c1e0b306" />
 
 - Click on "view profiles", and visualize the new columns on the right
-- Choose the evaluation method you need
+- Choose the evaluation method you need. When your segment only contains person attributes, all the evaluation methods are available.
+  
+<img width="1721" height="904" alt="Screenshot 2026-01-28 at 14 46 37" src="https://github.com/user-attachments/assets/348ba83c-c559-408b-b77d-caa280632983" />
+
 - Save the segment
+- For your segment to be evaluated by the audience job and available for activation, you may publish it.
 
 **Audience 2**<br>
 This person-level audience is about events
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
-- Please respect this segment label policy for this session "YOUR_TRIGRAM + label"
 - Go to the events tab, search for "page" in the search bar, drag and drop the "page views" event type
 - Click on "page views" in the "browse variables" section to add context to the "page views" event, select "today" instead of "any time"
 - Go to Web/Web page details and drag and drop the "page name" attribute in the "event rules" section, select name="product_X"
@@ -51,6 +54,8 @@ This person-level audience is about events
 - Clean the search bar
 - Click on "form filled out" in the "browse variables" section if you wish to add context in the "form filled out" event
 - Save the segment
+
+When adding events or additional dimensions, it might depend on the number of events, timeframe used for events, additional dimensions, etc. Combining a batch segment in a streaming segment is a way to ensure real-time evaluation of the most important criteria.
 
 **Audience 3**<br>
 This person-level audience is about combining profiles and account attributes
