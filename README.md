@@ -59,4 +59,3 @@ Click next to see the mapping. This mapping is the default mapping associated to
 Click on next, review your activation and click on finish to validate it.
 
 
-
