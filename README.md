@@ -6,7 +6,7 @@ Each segment has a focus on a dedicated segment builder capability.<br>
 All capabilities can be combined in more complex segments if needed.
 <br><br>
 
-**Audience 1**<br>
+<h2>Audience 1</h2>
 Attributes, events, and existing audiences can be combined in segment definition. This first person-level audience is about profile attributes only. 
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
@@ -42,7 +42,7 @@ Attributes, events, and existing audiences can be combined in segment definition
 - Save the segment
 - For your segment to be evaluated by the audience job and available for activation, you may publish it.
 
-**Audience 2**<br>
+<h2>Audience 2</h2>
 Attributes, events, and existing audiences can be combined in segment definition. This second person-level audience is about events.
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
@@ -78,7 +78,7 @@ Attributes, events, and existing audiences can be combined in segment definition
 
 Combining a batch segment in a streaming/edge segment is a way to ensure on-time evaluation for the most important criteria of your use cases.
 
-**Audience 3**<br>
+<h2>Audience 3</h2>
 This person-level audience is about combining profiles and account attributes.
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
@@ -103,7 +103,7 @@ This person-level audience is about combining profiles and account attributes.
   
 <img width="1718" height="903" alt="Screenshot 2026-01-28 at 15 16 12" src="https://github.com/user-attachments/assets/1e350c7a-f51b-4e4c-83d5-ecc07f96d4ba" />
 
-**Audience 4**<br>
+<h2>Audience 4</h2>
 This time we will not create person-level audiences that target persons, but an account-level audience that will target accounts. LinkedIn for example allows to send person-level audiences OR account-level audiences depending on use cases. Some destinations in the B2B industry can only receive account-level audiences.
 
 - In the home page, under Accounts on the left rail, click on audiences, then create audience
