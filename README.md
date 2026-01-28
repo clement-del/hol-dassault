@@ -104,12 +104,13 @@ This person-level audience is about combining profiles and account attributes.
 <img width="1718" height="903" alt="Screenshot 2026-01-28 at 15 16 12" src="https://github.com/user-attachments/assets/1e350c7a-f51b-4e4c-83d5-ecc07f96d4ba" />
 
 **Audience 4**<br>
-Account-level audience
+This time we will not create person-level audiences that target persons, but an account-level audience that will target accounts. LinkedIn for example allows to send person-level audiences OR account-level audiences depending on use cases. Some destinations in the B2B industry can only receive account-level audiences.
 
-- In the home page, under Accounts, click on audiences, then create audience
+- In the home page, under Accounts on the left rail, click on audiences, then create audience
 - Name your segment with "TRIGRAM-label"
 - Click on XDM Business Account/Account Organization, drag and drop "Number of employees", select is greater than 500
 - Click on Opportunities/Opportunity amount/, drag and drop "Amount", select greater than 100000
+
 - Refresh estimate and view accounts
 - Click on Opportunities/, drag and drop "Expected close date", select in next 3 months
 
