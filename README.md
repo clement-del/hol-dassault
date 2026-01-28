@@ -50,12 +50,22 @@ Click on Opportunities/Opportunity amount/, drag and drop "Amount", select great
 Refresh estimate and view accounts
 Click on Opportunities/, drag and drop "Expected close date", select in next 3 months
 
-**Activation**
+**Segment activation**
 You will find already 12 ready-to-activate published person-level audiences in the audience folder named "HOL" (HOL = Hands-On-Lab).
 Use the audiences named according to your login 01->A, 02->B, 03->C, etc.
 Select an audience, click on "activate to destination"
 Go to schedule, select "Export full files" and "Daily" at the time of your choice
 Click next to see the mapping. This mapping is the default mapping associated to this destination. If you wish to add additional field to this destination, click on "Add new mapping", click on the arrow, type "address" in the search bar and select the work email address for example.
 Click on next, review your activation and click on finish to validate it.
+
+The activation process is similar for any destination.
+
+**Dataset export (for technical users)**
+You can also export raw data from entire datasets instead of segments with attributes.
+You can export system datasets, business datasets, or datasets you created thanks to Query Services.
+Go to "Destinations", then "Browse", and click on the 3 dots on the line of the "Demo S3 Destination [Datasets]" destination, then "Export datasets"
+Select for example "Demo System - B2B Account Dataset" and "Demo System - B2B Person Dataset", and click on "Next"
+Visualize folder path, scheduling options, and click on "Next" to see the final review.
+Click Finish
 
 
