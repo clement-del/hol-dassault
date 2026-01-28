@@ -109,16 +109,38 @@ This time we will not create person-level audiences that target persons, but an 
 - In the home page, under Accounts on the left rail, click on audiences, then create audience
 - Name your segment with "TRIGRAM-label"
 - Click on XDM Business Account/Account Organization, drag and drop "Number of employees", select is greater than 500
-- Click on Opportunities/Opportunity amount/, drag and drop "Amount", select greater than 100000
+- Come back on the main segmentation screen by clicking on "attributes", cf below screenshot:
 
-- Refresh estimate and view accounts
+<img width="1716" height="903" alt="Screenshot 2026-01-28 at 15 25 00" src="https://github.com/user-attachments/assets/cf5f0268-b096-49ba-9b8b-3b4e1b3cfa3e" />
+
+- Click on Opportunities/Opportunity amount/, drag and drop "Amount", select greater than 10000
 - Click on Opportunities/, drag and drop "Expected close date", select in next 3 months
+
+<img width="1718" height="905" alt="Screenshot 2026-01-28 at 15 26 40" src="https://github.com/user-attachments/assets/3ecc35e9-24ba-4629-95db-c0ae0818260a" />
+
+- Refresh estimate and view accounts, same mechanisms apply as for person-level audiences
+- Please note that account audiences are only evaluated in batch mode
 
 <h1>Audience activation</h1>
 You will find 12 ready-to-activate published person-level audiences in the audience folder named "HOL" (HOL = Hands-On-Lab).<br>
 Use the audiences named according to your login 01->A, 02->B, 03->C, etc.<br><br>
 
-- Select an audience, click on "activate to destination"
+<img width="1720" height="899" alt="Screenshot 2026-01-28 at 15 27 57" src="https://github.com/user-attachments/assets/30d8f188-50fc-4346-a4aa-3d641945f26b" />
+
+- When you wish to activate segments, you can activate one segment to a destination, or select a destination first, and pick all segments required for this destination.
+- We will do the first method: first selecting the segment, and pick a destination.
+- The destination for this exercice will be an S3 account.
+- Depending on destinations, activation is streaming or batch.
+- The process of the streaming/edge segment activated to a streaming destination is the following :
+1. As soon a new dataflow arrives in AEP, the segment is evaluated in seconds/milliseconds and persons enter (or exit) the segment
+2. An enter or exit in this segment automatically triggers the activation and the persons are propagated to (or removed from) the destination in seconds/milliseconds<br><br>
+
+So let's activate an audience to our S3 account, a batch activation.<br>
+- Select the right audience, click on "activate to destination"
+- Select the "Demo S3 Destination (audiences)" destination
+<img width="1719" height="907" alt="Screenshot 2026-01-28 at 15 55 14" src="https://github.com/user-attachments/assets/9ee04174-a2b8-479a-bffc-de9426a90920" />
+
+
 - Go to schedule, select "Export full files" and "Daily" at the time of your choice
 - Click next to see the mapping. This mapping is the default mapping associated to this destination. If you wish to add additional field to this destination, click on "Add new mapping", click on the arrow, type "address" in - the search bar and select the work email address for example.
 - Click on next, review your activation and click on finish to validate it.<br>
