@@ -40,7 +40,7 @@ In the home page, under Customer, click on audiences, then create audience, buil
 Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO, CFO, CTO
 Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/Account/Account Organization/, drag and drop "Number of employees", select greater than 500
 
-**Segment 4:** KOOOOO
+**Segment 4:**
 Account-level audience
 
 In the home page, under Accounts, click on audiences, then create audience
@@ -50,6 +50,13 @@ Click on Opportunities/Opportunity amount/, drag and drop "Amount", select great
 Refresh estimate and view accounts
 Click on Opportunities/, drag and drop "Expected close date", select in next 3 months
 
+**Activation**
+You will find already 12 ready-to-activate published person-level audiences in the audience folder named "HOL" (HOL = Hands-On-Lab).
+Use the audiences named according to your login 01->A, 02->B, 03->C, etc.
+Select an audience, click on "activate to destination"
+Go to schedule, select "Export full files" and "Daily" at the time of your choice
+Click next to see the mapping. This mapping is the default mapping associated to this destination. If you wish to add additional field to this destination, click on "Add new mapping", click on the arrow, type "address" in the search bar and select the work email address for example.
+Click on next, review your activation and click on finish to validate it.
 
 
 
