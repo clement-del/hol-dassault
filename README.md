@@ -63,9 +63,24 @@ The activation process is similar for any destination.
 **Dataset export (for technical users)**
 You can also export raw data from entire datasets instead of segments with attributes.
 You can export system datasets, business datasets, or datasets you created thanks to Query Services.
-Go to "Destinations", then "Browse", and click on the 3 dots on the line of the "Demo S3 Destination [Datasets]" destination, then "Export datasets"
+
+You will create your own dataset export destination on a s3 account.
+Go to "Destinations", then "Catalog", filter on "S3".
+Click on the 3 dots, and click on "Configure new destination"
+Select an existing s3 account already configured on the environment
+Pick the "Dataset" data type instead of "Audiences"
+Put the following values
+Name : "Demo S3 Destination [Datasets] + YOUR_TRIGRAM"
+Bucket name : "aepdemodestination"
+Folder path : "/aep-audiences/"
+File type = JSON
+Compression format GZIP
+
+Now that your destination for dataset on S3 has been created, it is time to export your first datasets
+Go to "Destinations", then "Browse", and click on the 3 dots on the line of the "Demo S3 Destination [Datasets]" destination.
+Click on "Export datasets"
 Select for example "Demo System - B2B Account Dataset" and "Demo System - B2B Person Dataset", and click on "Next"
 Visualize folder path, scheduling options, and click on "Next" to see the final review.
-Click Finish
+Click on "Finish" to validate the export on the cloud storage destination.
 
 
