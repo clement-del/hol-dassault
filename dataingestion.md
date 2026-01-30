@@ -7,44 +7,45 @@ In this first exercise, we are going to ingest a call center data file into RTCD
 - [Download the file](Events_Call_Center.csv  "download") and save it locally.
 - Go to Connections > Sources > Catalog, then select _local file upload_.
 
-label your datasetname uXX-EventDatasetforCallCenter , replace XX with your user number
 
-label your dataflow uXX-EventDatasetforCallCenter,
-
-No need to enable the dataset for profile for now
+<br /><br /><b>Dataflow details screen</b>
+- label your datasetname uXX-EventDatasetforCallCenter , replace XX with your user number
+- label your dataflow uXX-EventDatasetforCallCenter,
+- No need to enable the dataset for profile for now
 
 <img width="833" height="971" alt="image" src="https://github.com/user-attachments/assets/bba94bea-0107-4ff3-bca8-3882ce721121" />
 
 
-
-Select Events_Call_Center.csv 
+<br /><br /><b>Select data screen</b>
+- Drag and drop the Events_Call_Center.csv file.
+- RTCDP guesses the file format automatically.
+- Look at the sample data shown as preview.
 
 <img width="1735"  alt="image" src="https://github.com/user-attachments/assets/5fe12b8c-a060-4a5e-9dd5-b657699015d4" />
 
+
+
+<br /><br /><b>Mapping screen</b>
+- RTCDP tries to find the best mapping between the csv columns of the file and your selected data schema
+- You can alter the mapping to update it, add new columns or remove unnecessary ones
 <img width="1841" alt="image" src="https://github.com/user-attachments/assets/7120b8ba-b26d-48eb-a9cf-a8336824a6d0" />
 
-
-
-add calculated field  to map the callId field with the _id attribute
+- add calculated field  to map the callId field with the _id attribute
 
 <img width="1593"  alt="image" src="https://github.com/user-attachments/assets/12170c1a-70bf-4cda-aa98-7c08184d3e48" />
 
 
-validate
-
-<img width="111"  alt="image" src="https://github.com/user-attachments/assets/3ca12cbf-e9d9-4355-a68f-47c22f5a2710" />
-
-
+- Click Validate <img width="111"  alt="image" src="https://github.com/user-attachments/assets/3ca12cbf-e9d9-4355-a68f-47c22f5a2710" />
+- your data ingestion flow is now complete, you can look at the dataflow activity details to check how many records gets ingested.
+ 
 <img width="1040"  alt="image" src="https://github.com/user-attachments/assets/caeea408-2296-45f7-9840-aab2e37ec88d" />
 
-
-Check data ingestion process. 
-
-Click on Target Dataset > Preview Dataset
+- Click on Target Dataset > Preview Dataset to inspect the records within RTCDP datasets. 
 
 
-# API Streaming Exercise
+# API Streaming Ingestion
 
+In this second exercise, we are going to setup a HTTP streaming ingestion endpoint you can use to send json data from your information system to RTCDP.
 Filter the Source Connector from the catalog (look for http)
 
 Click Add Data
