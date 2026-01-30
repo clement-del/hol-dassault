@@ -1,9 +1,11 @@
 [home](README.md)
 
 ---
-# File Exercise 
+# File Ingestion 
 
-Source Catalog → local file upload
+In this first exercise, we are going to ingest a call center data file into RTCDP. 
+- Download the file and save it locally.
+- Go to Connections > Sources > Catalog, then select _local file upload_.
 
 label your datasetname uXX-EventDatasetforCallCenter , replace XX with your user number
 
@@ -121,3 +123,6 @@ Click the audience name to look at the details of the created audience
 
 <img width="2306"  alt="image" src="https://github.com/user-attachments/assets/be67aa7a-4185-4dad-b359-e50090b8f768" />
 
+
+<br /><br />
+Congratulations! You have completed the dataingestion chapter of the lab 👍 ✨, go to the [next step](datamodel.md) or return to the [home](README.md)
