@@ -21,7 +21,7 @@
 
 [Datamodel](./datamodel.md): Extend the B2B datamodel with your own schemas.
 
-[Data Distiller](./datadistiller.md): Advanced data management using SQL like interface. 
+[Data Distiller](./datadistiller.md): Advanced data management using SQL-like interface. 
 
 [Segmentation](./segmentation.md): Build your audiences with Adobe segmentation builder.
 
