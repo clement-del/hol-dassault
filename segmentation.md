@@ -12,7 +12,7 @@ Attributes, events, and existing audiences can be combined in segment definition
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
   
-<img width="1720" height="895" alt="Screenshot 2026-01-28 at 14 37 05" src="https://github.com/user-attachments/assets/0383f736-db86-49c1-a1ef-d5a3eb5c8106" />
+<img  alt="Screenshot 2026-01-28 at 14 37 05" src="https://github.com/user-attachments/assets/0383f736-db86-49c1-a1ef-d5a3eb5c8106" />
  
 - Please respect this segment label policy for this session "YOUR_TRIGRAM + label"
 - Navigate to XDM Individual Profile / Work email / Address, drag and drop this attribute, select "Address exists"
