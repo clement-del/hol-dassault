@@ -83,9 +83,9 @@ timestamp
 
 search.keywords
 
-<img width="1175" height="749" alt="image" src="https://github.com/user-attachments/assets/a92fba5c-e23a-40ad-93ea-c9558c5b05fb" />
+<img width="1175" alt="image" src="https://github.com/user-attachments/assets/a92fba5c-e23a-40ad-93ea-c9558c5b05fb" />
 
-<img width="2048" height="801" alt="image" src="https://github.com/user-attachments/assets/218313da-083d-40a2-bc00-831ab0dcbe12" />
+<img width="2048" alt="image" src="https://github.com/user-attachments/assets/218313da-083d-40a2-bc00-831ab0dcbe12" />
 
 
 Retrieve the dataflow ID from the dataflow UI
