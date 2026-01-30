@@ -4,7 +4,7 @@
 # File Ingestion 
 
 In this first exercise, we are going to ingest a call center data file into RTCDP. 
-- Download the file and save it locally.
+- [Download the file](Events_Call_Center.csv  "download") and save it locally.
 - Go to Connections > Sources > Catalog, then select _local file upload_.
 
 label your datasetname uXX-EventDatasetforCallCenter , replace XX with your user number
