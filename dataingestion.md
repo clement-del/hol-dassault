@@ -112,18 +112,30 @@ In our case, we're going to use an incoming event (a web search containing speci
     - Click _New field type_ button, then select _Add calculated field_.
     - The data prep window appears, let's add the name of our user (like `'user01'`), dont forget the surrounding quotes !. Click _Save_.
     - Click _Map target field_, select _producedBy_.
+   
+<img width="1719" alt="Screenshot 2026-02-02 at 11 48 48" src="https://github.com/user-attachments/assets/31d82941-a892-4a28-afbf-64133d256df0" />
+
  - Then, let's call a function that will generate a unique id for each of our interactions and map it to the __id_ attribute of the schema.
     - Click _New field type_ button, then select _Add calculated field_.
     - The data prep window appears, under function tab, let's look for the _uuid()_ function. Click the + sign to add it. Click _Save_.
     - Click _Map target field_, select __id_.
+  
+<img width="1717" alt="Screenshot 2026-02-02 at 11 49 52" src="https://github.com/user-attachments/assets/78e9f555-4278-464e-9a36-57dd7b476e82" />
+
   - Now, let's call a function that will add a timestamp for each of our interactions and map it to the _timestamp_ attribute of the schema.
     - Click _New field type_ button, then select _Add calculated field_.
     - The data prep window appears, under function tab, let's look for the _now()_ function. Click the + sign to add it. Click _Save_.
     - Click _Map target field_, select _timestamp_.
+   
+<img width="1717" alt="Screenshot 2026-02-02 at 11 50 58" src="https://github.com/user-attachments/assets/0138b7fe-603c-4d88-9928-f70148a6e1ae" />
+
    - Map _email_ source field to _userAccountID_.
     - Click _New field type_ button, then select _Add new field_.
     - select _email_, then click _select_
     - under target fields, search for _userAccount_, expand the node and select _ID_
+
+<img width="1716" alt="Screenshot 2026-02-02 at 11 53 54" src="https://github.com/user-attachments/assets/46548963-5666-4d59-84c5-fe4b752961a4" />
+
    - Map _websearch_ source field to _search.keywords_.
     - Click _New field type_ button, then select _Add new field_.
     - select _websearch_, then click _select_
