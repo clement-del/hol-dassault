@@ -84,7 +84,7 @@ This person-level audience is about combining profiles and account attributes.
 
 - In the home page, under Customer, click on audiences, then create audience, build rule
 - Type "Job title" in the attribute search bar, drag and drop the attribute, and select CEO
-- Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/Account/Account Organization/, drag and drop "Number of employees", select greater than 20000
+- Clean the search bar, navigate to XDM Individual Profile/Person Component/Source Account key/Account/Account Organization/, drag and drop "Number of employees", select greater than 500
 
 <img width="1720"  alt="Screenshot 2026-01-28 at 15 06 14" src="https://github.com/user-attachments/assets/59d57fbb-aebd-406b-87f7-a0f3662cea97" />
 
@@ -105,7 +105,7 @@ This person-level audience is about combining profiles and account attributes.
 <img width="1718"  alt="Screenshot 2026-01-28 at 15 16 12" src="https://github.com/user-attachments/assets/1e350c7a-f51b-4e4c-83d5-ecc07f96d4ba" />
 
 <h2>Audience 4</h2>
-This time we will not create person-level audiences that target persons, but an account-level audience that will target accounts. LinkedIn for example allows to send person-level audiences OR account-level audiences depending on use cases. Some destinations in the B2B industry can only receive account-level audiences.
+This time we will not create person-level audiences that target persons, but an account-level audience that will target accounts. Some destinations in the B2B industry support account-level audiences. For example, LinkedIn, Bombora, Demandbase, and cloud storage destinations allow to send account-level audiences. LinkedIn supports both person-level and account-level audiences.
 
 - In the home page, under Accounts on the left rail, click on audiences, then create audience
 - Name your segment with "TRIGRAM-label"
