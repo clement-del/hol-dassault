@@ -13,9 +13,13 @@ Use the audiences named according to your login Audience. The audiences ending w
 - We will do the first method: first selecting the segment, and pick a destination.
 - The destination for this exercice will be an S3 account.
 - Depending on destinations, activation is streaming or batch.
-- The process of the streaming/edge segment activated to a streaming destination is the following :
-1. As soon a new dataflow arrives in AEP, the segment is evaluated in seconds/milliseconds and persons enter (or exit) the segment
-2. An enter or exit in this segment automatically triggers the activation and the persons are propagated to (or removed from) the destination in seconds/milliseconds<br><br>
+- The process of an edge segment activated to an edge destination is the following :
+1. As soon a new dataflow arrives in AEP, the segment is evaluated in milliseconds and persons enter (or exit) the segment
+2. An enter or exit in this segment automatically triggers the activation and the persons are propagated to (or removed from) the destination in 350 milliseconds<br>
+- The process of a streaming segment activated to a streaming destination is the following :
+1. As soon a new dataflow arrives in AEP, the segment is evaluated in seconds to minutes and persons enter (or exit) the segment
+2. An enter or exit in this segment automatically triggers the activation and the persons are propagated to (or removed from) the destination in seconds to minutes<br><br>
+
 
 So let's activate an audience to our S3 account, a batch activation.<br>
 - Select the right audience, click on "activate to destination"
