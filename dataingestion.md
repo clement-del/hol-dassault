@@ -65,7 +65,9 @@ Through 3 simple steps, you were able to bring data in RTCDP, there's plenty of 
 
 ## Streaming Ingestion
 
-In this second exercise, we are going to setup a HTTP streaming ingestion endpoint that will receive  json data from your back end system. This is particularly useful when you have to segment and activate customer data in real-time. Common use case are: apply personalized content on your website based on customer interactions, or trigger a request for call back to your sales team. 
+In this second exercise, we are going to setup a HTTP streaming ingestion endpoint that will receive  json data from your back end system.<br>
+This is particularly useful when you have to segment and activate customer data in real-time. <br>
+Common use case are: apply personalized content on your website based on customer interactions, or trigger a request for call back to your sales team. <br>
 In our case, we're going to use an incoming event (a web search containing specific keyworks such as Catia) to segment our customer in real-time.
 
 - Go to Connections > Sources > Catalog.
