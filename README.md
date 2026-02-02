@@ -13,9 +13,6 @@
 </p>
 </div>
 
-<br>Access to Adobe Experience Platform : <a href="https://experience.adobe.com/#/@demopotemea/sname:sandbox05/platform/home">https://experience.adobe.com/#/@demopotemea/sname:sandbox05/platform/home</a>
-
-
 # Sections
 [Access](./access.md): Log in Adobe Experience Platform UI. 
 
