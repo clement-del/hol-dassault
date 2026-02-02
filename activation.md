@@ -4,9 +4,10 @@
 
 <h1>Audience activation</h1>
 You will find 12 ready-to-activate published person-level audiences in the audience folder named "HOL" (HOL = Hands-On-Lab).<br>
-Use the audiences named according to your login 01->A, 02->B, 03->C, etc.<br><br>
 
-<img width="1720" alt="Screenshot 2026-01-28 at 15 27 57" src="https://github.com/user-attachments/assets/30d8f188-50fc-4346-a4aa-3d641945f26b" />
+Use the audiences named according to your login Audience. The audiences ending with 01 for the username01, the audiences ending with 02 for username02, etc.<br><br>
+
+<img width="1714" alt="Screenshot 2026-02-02 at 18 13 04" src="https://github.com/user-attachments/assets/aec9a926-e5ef-4f95-a9d2-3aa969d94c7e" />
 
 - When you wish to activate segments, you can activate one segment to a destination, or select a destination first, and pick all segments required for this destination.
 - We will do the first method: first selecting the segment, and pick a destination.
