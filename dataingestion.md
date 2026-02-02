@@ -27,7 +27,7 @@ Ingesting offline data is made easy through the use of dedicated source connecto
 - Optionally, you can add a description, such as _Customer Service Events for 2025_.
 - Select the schema that represents the kind of data you'd want to store. The schema that store interaction data from call center has already been created for you. Select the schema named `Demo System - Event Schema for Call Center (Global v1.1)`.
 - No need to enable the dataset for profile for this exercise.
-- Enable partial ingestion, and define a treshold from which the entirety of the file will be rejected.
+- Enable partial ingestion, and define a treshold from which the entirety of the file will be rejected - 15% for example.
 - Label your dataflow _uXX-EventDatasetforCallCenter_.
 - Once you have configured the following setup, click _Next_.
 
