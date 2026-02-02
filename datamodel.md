@@ -56,4 +56,4 @@ The following diagram provides an example of how the different B2B schemas can r
 
 
 <br /><br />
-Congratulations! You have completed the dataingestion chapter of the lab 👍 ✨, go to the [next step](datadistiller.md) or return to the [home](README.md)
+Congratulations! You have completed the data model chapter of the lab 👍 ✨, go to the [next step](datadistiller.md) or return to the [home](README.md)
