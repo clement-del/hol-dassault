@@ -1,19 +1,19 @@
 [home](README.md)
 
 # Data Ingestion
-Adobe RTCDP facilitates data ingestion from assorted sources  where it can be accessed, used, and analyzed by an organization. Data ingestion can be grouped into two main categories: batch ingestion and streaming ingestion
+AEP facilitates data ingestion from assorted sources  where it can be accessed, used, and analyzed by an organization. Data ingestion can be grouped into two main categories: batch ingestion and streaming ingestion
 
 <div align="center">
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/e5fe8870-64e6-4bf8-8605-7391b1cd4a98" /><br />
-<i>an overview of source and activation dataflows in RTCDP</i>
+<i>an overview of source and activation dataflows in AEP</i>
 </div>
 
 ---
 ## Batch Ingestion 
 
-In this first exercise, we are going to ingest data from a call center data into RTCDP. It will be used to complete the 360° profile of your customers, and can later be used for segmentation, activation and analysis purposes. <br><br>
+In this first exercise, we are going to ingest data from a call center data into AEP. It will be used to complete the 360° profile of your customers, and can later be used for segmentation, activation and analysis purposes. <br><br>
 The file contains phone numbers from customers, a timestamp and call details (call reason, comments from the call agent, call resolution status etc). Those interaction data will be stored in a specific dataset that you're going to create.<br><br>
-Ingesting offline data is made easy through the use of dedicated source connectors. They can be pulled from sftp or cloud storage location with dedicated connector. For this lab, we're going to upload the file manually in RTCDP UI, so that you have full control over the end to end process.
+Ingesting offline data is made easy through the use of dedicated source connectors. They can be pulled from sftp or cloud storage location with dedicated connector. For this lab, we're going to upload the file manually in AEP UI, so that you have full control over the end to end process.
 
 - [Download the file](Events_Call_Center.csv  "download") and save it locally.
 - From the left rail, go to Connections > Sources > Catalog.
@@ -36,32 +36,34 @@ Ingesting offline data is made easy through the use of dedicated source connecto
 
 <br /><br /><b>Select data step</b>
 - Drag and drop the Events_Call_Center.csv file.
-- RTCDP guesses the file format automatically.
+- AEP guesses the file format automatically.
 - Look at the sample data shown as preview.
 - click _Next_.
 
 <img width="1735"  alt="image" src="https://github.com/user-attachments/assets/5fe12b8c-a060-4a5e-9dd5-b657699015d4" />
 
 
-
 <br /><br /><b>Mapping step</b>
-- RTCDP tries to find the best mapping between the csv columns of the file and your selected data schema
-- You can alter the mapping to update it, add new columns or remove unnecessary ones
+- AEP tries to find the best mapping between the csv columns of the file and your selected data schema. Sometimes it cannot find accurate mapping or lacks information and you will have to override the default mapping.
+- In the screenshot below a warning mentions one of the required attribute is missing
+- You can alter the mapping to update it, add new columns or remove unnecessary ones.
+
 <img width="1841" alt="image" src="https://github.com/user-attachments/assets/7120b8ba-b26d-48eb-a9cf-a8336824a6d0" />
 
-- add calculated field  to map the callId field with the _id attribute
-
+- Make sure the _callId_ attribute is mapped to __id_ in the schema
 <img width="1593"  alt="image" src="https://github.com/user-attachments/assets/12170c1a-70bf-4cda-aa98-7c08184d3e48" />
 
 - Click Validate <img width="111"  alt="image" src="https://github.com/user-attachments/assets/3ca12cbf-e9d9-4355-a68f-47c22f5a2710" /> to check if there are any pending issues.
 - Your data ingestion flow is now complete, - click _Finish_.
-- You can now seethe dataflow activity details and check how many records get ingested.
+- You can now seethe dataflow activity details and check how many records get ingested - it can take a couple of minutes to see the value reflected in the UI.
  
 <img width="1040"  alt="image" src="https://github.com/user-attachments/assets/caeea408-2296-45f7-9840-aab2e37ec88d" />
 
-- Click on Target Dataset > Preview Dataset to inspect the records within RTCDP datasets.
+- If you change screen in the meantime, you can still access your dataflow details by clicking the _Connections_ > _Sources_ > _Dataflows_ tab.
 
-Through 3 simple steps, you were able to bring data in RTCDP, there's plenty of additional options available to manage errors, retries, schedules ingestion etc. Let's now look at streaming ingestion process. 
+- Click on Target Dataset > Preview Dataset to inspect the records within AEP datasets.
+
+Through 3 simple steps, you were able to bring data in AEP, there's plenty of additional options available to manage errors, retries, schedules ingestion etc. Let's now look at streaming ingestion process. 
 
 ## Streaming Ingestion
 
@@ -87,7 +89,7 @@ In our case, we're going to use an incoming event (a web search containing speci
 - Click Next 
 
 <br /><br /><b>Select data step</b>
-- [Download the dassault-event-payload-search.json](dassault-event-payload-search.json  "download"). It contains a sample payload describing the structure of the interaction that is created when a user makes a search on a webiste. It usually comes from your datalayer or your backend system. 
+- [Download the dassault-event-payload-search.json](dassault-event-payload-search.json  "download"). Save the file to your local disk using _Save As_ from the _File_ menu of your browser. It contains a sample payload describing the structure of the interaction that is created when a user makes a search on a webiste. It usually comes from your datalayer or your backend system. 
 - Now, let's upload the dassault-event-payload-search.json to describe the  input that will be expected.
 - You can preview the sample data on the right hand side. 
 
@@ -106,8 +108,9 @@ In our case, we're going to use an incoming event (a web search containing speci
 <img width="1027"  alt="image" src="https://github.com/user-attachments/assets/f8a66ed5-5a28-4bec-addc-79a0fbc287b7" />
 
 <br /><br /><b>Mapping step</b>
-- RTCDP tries to find the best mapping between the json payload of the request and your selected dataset. You can alter the mapping to update it, add new columns or remove unnecessary ones.
-- Let's add following calculated fields to enrich our record with additional details.
+- AEP tries to find the best mapping between the json payload of the request and your selected dataset. You can alter the mapping to update it, add new columns or remove unnecessary ones.
+- AEP raises a warning when a field required by the schema is not mapped. All experience events require a unique identifier (id) and a timestamp, ad well as profile identitier (called userAccount in our schema)
+- Let's add following calculated fields to enrich our record with additional details and fix those warnings.
   - First we want to store who ingested the data, to do so we are going to map our user name to the _producedBy_ attribute of the schema.
     - Click _New field type_ button, then select _Add calculated field_.
     - The data prep window appears, let's add the name of our user (like `'user01'`), dont forget the surrounding quotes !. Click _Save_.
@@ -160,11 +163,11 @@ In our case, we're going to use an incoming event (a web search containing speci
 <img width="303"  alt="image" src="https://github.com/user-attachments/assets/8fb42d94-1b19-4d2d-8422-2d6c216b71ec" />
 
 <br /><br /><b>Testing the streaming segmentation</b>
-- Open the <a href="https://1246593-apiauto-stage.adobeio-static.net/index.html#/http-client" target="_blank">Streaming Segmentation Tester</a>. This is a htttp client we use to send data to RTCDP 
+- Open the <a href="https://1246593-apiauto-stage.adobeio-static.net/index.html#/http-client" target="_blank">Streaming Segmentation Tester</a>. This is a htttp client we use to send data to AEP 
 - Paste the streaming endpoint URL and the dataflowID from the previous step into their respective fields.
 - Enter your user email address.
 - Click invoke HTTP Client.
-- You should see in the response a confirmation your request has been sent to the streaming endpoint. Behind the scene the request will and in Adobe Kafka pipeline that will segment in real time our user (as defined by the email identity). 
+- You should see in the response a confirmation your request has been sent to the streaming endpoint. Behind the scene the request is sent over to an Adobe managed Kafka pipeline that will segment in real time our user (as defined by the email identity). 
 
 
 <br /><br /><b>Lookup Profile Details</b>
@@ -174,14 +177,14 @@ In our case, we're going to use an incoming event (a web search containing speci
 
 
 Look for your user under Customer > Profiles, use the identity namespace Demo System - User ID
-- Go back to RTCDP browser window, under Customer > Profile menu, select the browse tab and look for the email address you used in the simulator. 
+- Go back to AEP browser window, under Customer > Profile menu, select the browse tab and look for the email address you used in the simulator. 
 - Make sure you use _Default Timebased_ Merge Policy and _Demo System - User ID_ Identity namespace.
 - Click _View_.
   
 <img width="1003" alt="image" src="https://github.com/user-attachments/assets/7084882f-b218-4cab-821c-b50325710e41" />
 
 
-- Under Audience membership tab, you should see your profile qualified for the _3DS - Interested in CATIA_ audience.
+- Under Audience membership tab, you should see your profile qualified for the _3DS - Interested in CATIA_ audience (it may take up to 5mn on this instance).
   
 <img width="1261"  alt="image" src="https://github.com/user-attachments/assets/94849f23-d443-4809-8f6e-3906cebbca9d" />
 
