@@ -11,8 +11,8 @@ Adobe RTCDP facilitates data ingestion from assorted sources  where it can be ac
 ---
 ## Batch Ingestion 
 
-In this first exercise, we are going to ingest data from a call center data into RTCDP. It will be used to complete the 360° profile of your customers, and can later be used for segmentation, activation and analysis purposes. 
-The file contains phone numbers from customers, a timestamp and call details (call reason, comments from the call agent, call resolution status etc). Those interaction data will be stored in a specific dataset that you're going to create.
+In this first exercise, we are going to ingest data from a call center data into RTCDP. It will be used to complete the 360° profile of your customers, and can later be used for segmentation, activation and analysis purposes. <br><br>
+The file contains phone numbers from customers, a timestamp and call details (call reason, comments from the call agent, call resolution status etc). Those interaction data will be stored in a specific dataset that you're going to create.<br><br>
 Ingesting offline data is made easy through the use of dedicated source connectors. They can be pulled from sftp or cloud storage location with dedicated connector. For this lab, we're going to upload the file manually in RTCDP UI, so that you have full control over the end to end process.
 
 - [Download the file](Events_Call_Center.csv  "download") and save it locally.
