@@ -16,7 +16,7 @@ The file contains phone numbers from customers, a timestamp and call details (ca
 Ingesting offline data is made easy through the use of dedicated source connectors. They can be pulled from sftp or cloud storage location with dedicated connector. For this lab, we're going to upload the file manually in RTCDP UI, so that you have full control over the end to end process.
 
 - [Download the file](Events_Call_Center.csv  "download") and save it locally.
-- Go to Connections > Sources > Catalog.
+- From the left rail, go to Connections > Sources > Catalog.
 - Browse the different category, under _Local system_, you should find _local file upload_
 - Click _Add data_ to start the 3 step wizard.
 
