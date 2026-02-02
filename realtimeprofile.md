@@ -30,7 +30,7 @@ Calling a call center automatically enriches the profile record in real time wit
 
 <h1>REAL-TIME PROFILE IN AEP UI</h1>
 
-Go to Customer/Profiles/Browse, and click on "View" on a random profile widget
+Go to Customer/Profiles/Browse, and click "View" on a random profile widget. You can also pick a precise profile whom you know one identity by selecting Email as Identity namespace and "emily.chen+20260123120309@emailsim.io" in the identity value field for example.
 
 <img width="1722" height="906" alt="Screenshot 2026-02-02 at 09 42 45" src="https://github.com/user-attachments/assets/4d393887-bdf0-48aa-9b9d-ffa8a07fa016" />
 
