@@ -30,15 +30,15 @@ Calling a call center automatically enriches the profile record in real time wit
 
 <h1>REAL-TIME PROFILE IN AEP UI</h1>
 
-Go to Customer/Profiles/Browse, and click "View" on a random profile widget. You can also pick a precise profile whom you know one identity by selecting Email as Identity namespace and "emily.chen+20260123120309@emailsim.io" in the identity value field for example.
+Go to Customer/Profiles/Browse, and click "View" on a random profile widget. You can also pick a precise profile like Emily Chen by accessing this link: <a href="https://experience.adobe.com/#/@demopotemea/sname:sandbox05/platform/profile/browse/GjaGwEF9RkFDVFNIQi2FtRJxLW0S3v1jxEf1tNfPoNfOf1jRl_1vNdflxWnLaK8ksp3B7mw">https://experience.adobe.com/#/@demopotemea/sname:sandbox05/platform/profile/browse/GjaGwEF9RkFDVFNIQi2FtRJxLW0S3v1jxEf1tNfPoNfOf1jRl_1vNdflxWnLaK8ksp3B7mw</a>, or select a namespace like "Email" and type an email value.
 
-<img width="1722" height="906" alt="Screenshot 2026-02-02 at 09 42 45" src="https://github.com/user-attachments/assets/4d393887-bdf0-48aa-9b9d-ffa8a07fa016" />
+<img width="1722" alt="Screenshot 2026-02-02 at 09 42 45" src="https://github.com/user-attachments/assets/4d393887-bdf0-48aa-9b9d-ffa8a07fa016" />
 
 Explore this section, and see for example the identity graph:
 
-<img width="1722" height="905" alt="Screenshot 2026-02-02 at 09 45 42" src="https://github.com/user-attachments/assets/ddd4dd84-8f07-4c5e-bb27-86d03b2b955a" />
+<img width="1722"  alt="Screenshot 2026-02-02 at 09 45 42" src="https://github.com/user-attachments/assets/ddd4dd84-8f07-4c5e-bb27-86d03b2b955a" />
 
 And the experience events timeline showing all useful interactions a contact has had with your company:
 
-<img width="1718" height="901" alt="Screenshot 2026-02-02 at 09 46 02" src="https://github.com/user-attachments/assets/9b439bf2-a61e-4bd7-a632-3d23fa915f2b" />
+<img width="1718"  alt="Screenshot 2026-02-02 at 09 46 02" src="https://github.com/user-attachments/assets/9b439bf2-a61e-4bd7-a632-3d23fa915f2b" />
 
