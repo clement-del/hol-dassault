@@ -148,7 +148,7 @@ Adobe Experience Platform can do it very easily with dynamic segmentation.<br>
   
 <img width="1711" alt="Screenshot 2026-02-03 at 15 37 51" src="https://github.com/user-attachments/assets/a032782f-10c2-4731-8ab9-d139c9165572" />
 
-- We will know use a dynamic value from our profile attributes, and compare the name of the product in the browsed page to the name of the products they own
+- We will now use a dynamic value from our profile attributes, and compare the name of the product in the browsed page to the name of the products they own
 - Go to the attributes tab, search for "owned", and open the "Owned products" folder
 - Display the event rules to make it visible
 
