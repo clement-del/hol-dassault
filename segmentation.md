@@ -131,7 +131,7 @@ Instead of creating tons of segment like:<br>
 - Etc.<br><br>
 Adobe Experience Platform can do it very easily with dynamic segmentation.<br>
 - Create a new audience<br>
-- Prerequisite for this session only as we need to use some attributes that are not populated with real data and are by default hidden: click on the wheel highlighted below and select "Show full XDM schema", then click again on the wheel to make it disappear.<br>
+- Prerequisite for this session only as we need to use some attributes that are not populated with real data and are by default hidden: click on the wheel highlighted below and select "Show full XDM schema", then click again on the wheel to make it disappear.<br><br>
 
 <img width="969" alt="Screenshot 2026-02-03 at 15 28 58" src="https://github.com/user-attachments/assets/cc696a45-0cec-4fa7-b46f-b74bc52b5a90" />
 
