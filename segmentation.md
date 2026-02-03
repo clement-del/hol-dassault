@@ -123,15 +123,15 @@ This time we will not create person-level audiences that target persons, but an 
 - Please note that account audiences are only evaluated in batch mode
 
 <h2>Audience 5</h2>
-We will now explore the concept of dynamic audiences. Dynamic segmentation can be very useful to solve business segmentation needs at scale.<br>
-Problematic: we want to create an audience of persons browsing product pages from Dassault Systèmes websites for products they do not own.<br>
-Instead of creating tons of segment like:
-- Persons browsing product A web pages that do not own product A
-- Persons browsing product B web pages that do not own product B
-- Etc.<br>
-Adobe Experience Platform can do it very easily with dynamic segmentation.
-- Create a new audience
-- Prerequisite for this session only as we need to use some attributes that are not populated with real data and are by default hidden: click on the wheel highlighted below and select "Show full XDM schema", then click again on the wheel to make it disappear.
+We will now explore the concept of dynamic audiences. Dynamic segmentation can be very useful to solve business segmentation needs at scale.<br><br>
+Problematic: we want to create an audience of persons browsing product pages from Dassault Systèmes websites for products they do not own.<br><br>
+Instead of creating tons of segment like:<br>
+- Persons browsing product A web pages that do not own product A<br>
+- Persons browsing product B web pages that do not own product B<br>
+- Etc.<br><br>
+Adobe Experience Platform can do it very easily with dynamic segmentation.<br>
+- Create a new audience<br>
+- Prerequisite for this session only as we need to use some attributes that are not populated with real data and are by default hidden: click on the wheel highlighted below and select "Show full XDM schema", then click again on the wheel to make it disappear.<br>
 
 <img width="969" alt="Screenshot 2026-02-03 at 15 28 58" src="https://github.com/user-attachments/assets/cc696a45-0cec-4fa7-b46f-b74bc52b5a90" />
 
