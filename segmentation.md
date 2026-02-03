@@ -122,4 +122,42 @@ This time we will not create person-level audiences that target persons, but an 
 - Refresh estimate and view accounts, same mechanisms apply as for person-level audiences
 - Please note that account audiences are only evaluated in batch mode
 
+<h2>Audience 5</h2>
+We will now explore the concept of dynamic audiences. Dynamic segmentation can be very useful to solve business segmentation needs at scale.<br>
+Problematic: we want to create an audience of persons browsing product pages from Dassault Systèmes websites for products they do not own.<br>
+Instead of creating tons of segment like:
+- Persons browsing product A web pages that do not own product A
+- Persons browsing product B web pages that do not own product B
+- Etc.<br>
+Adobe Experience Platform can do it very easily with dynamic segmentation.
+- Create a new audience
+- Prerequisite for this session only as we need to use some attributes that are not populated with real data and are by default hidden: click on the wheel highlighted below and select "Show full XDM schema", then click again on the wheel to make it disappear.
 
+<img width="969" alt="Screenshot 2026-02-03 at 15 28 58" src="https://github.com/user-attachments/assets/cc696a45-0cec-4fa7-b46f-b74bc52b5a90" />
+
+- Go to "Events" tab, search for "page" and drag and drop the event type "page views"
+
+<img width="1717" alt="Screenshot 2026-02-03 at 15 20 41" src="https://github.com/user-attachments/assets/27209107-8f6b-459d-a50b-bceda28d288b" />
+
+- We now wish to add context to this page view event, by specifying details on pages that have been browsed
+- Empty the "events" search bar
+- Click on "page view" in the "browse variable" section to add some context to this event
+- In the search bar, type "web", and go to "web" > "webpage details" folder
+- Drag and drop the "name" attribute in the event rule of the segmentation builder
+- Change the "equal" operator to "does not contain"
+  
+<img width="1711" alt="Screenshot 2026-02-03 at 15 37 51" src="https://github.com/user-attachments/assets/a032782f-10c2-4731-8ab9-d139c9165572" />
+
+- We will know use a dynamic value from our profile attributes, and compare the name of the product in the browsed page to the name of the products they own
+- Go to the attributes tab, search for "owned", and open the "Owned products" folder
+- Display the event rules to make it visible
+
+<img width="1719" alt="Screenshot 2026-02-03 at 15 38 32" src="https://github.com/user-attachments/assets/58f2d2c5-86a9-4dff-9bc8-471af224dfbc" />
+
+- Drag and drop the "name" attribute within the event rule to compare the "product name" of the page views (on the left) to the "name" of the product(s) they own (on the right).
+- This segment is now ready to detect customers that might have an interest in a new product for cross-sell.
+
+<img width="1719" height="897" alt="Screenshot 2026-02-03 at 15 39 17" src="https://github.com/user-attachments/assets/46703136-8ee2-4543-b25d-30d221085862" />
+
+<br /><br />
+Congratulations! You have completed the segmentation chapter of the lab 👍 ✨, go to the [next step](activation.md) or return to the [home](README.md)
